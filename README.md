@@ -41,17 +41,8 @@ Normalization();
 
 Resmaple();
 ```
-<br />
-The weight is calculated based on the following equations:  
-<br />
-![Formula1](https://github.com/HsucheChiang/Particle-Filter/blob/master/images/1.JPG)  
-<br />
-Where
-<br />
-![Formula2](https://github.com/HsucheChiang/Particle-Filter/blob/master/images/2.JPG)
-<br />
-![Formula3](https://github.com/HsucheChiang/Particle-Filter/blob/master/images/3.JPG)  
-<br />
+
+
 
 
 
