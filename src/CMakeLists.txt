@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.5.1)
+project(ParticleFilter)
+include_directories(${CMAKE_SOURCE_DIR})
+find_package(OpenCV REQUIRED)
+add_executable(ParticleFilter main.cpp particle.cpp)
+target_link_libraries(ParticleFilter ${OpenCV_LIBS})

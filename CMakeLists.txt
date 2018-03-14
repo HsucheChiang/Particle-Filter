@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.5.1)
+set (CMAKE_CXX_STANDARD 11)
+project(ParticleFilter)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+add_subdirectory(src)
+
+#Files installation path
+set(CMAKE_INSTALL_PREFIX ..)
+install(DIRECTORY build/bin/
+	DESTINATION Particle
+	FILES_MATCHING PATTERN ParticleFilter
+	PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ
+                    GROUP_EXECUTE GROUP_READ)
+install(DIRECTORY video/
+	DESTINATION Particle/)
