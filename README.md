@@ -29,7 +29,7 @@ If ( First frame (t=1) )
 }
 Else
 {
-  Sample the particles based on the transition probability
+  Sample the particles based on the transition probability;
 }
 
 
